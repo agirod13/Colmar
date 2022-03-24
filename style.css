@@ -1,0 +1,67 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 64px;
+}
+
+nav img{
+    height: 48px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.left ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    font-size: 32px;
+    padding-left: 24px;
+    padding-left: 24px;
+    text-align: center;
+}
+
+.right ul{
+    display: flex;
+    list-style-type: none;
+    gap:16px;
+    padding-right: 24px;
+}
+
+.banner{
+background-color: #a39f9f;
+}
+
+
+.information{
+background-color:#c9c5c5 ;
+}
+
+.course{
+    background-color: #a39f9f;
+}
+
+.thesis{
+    background-color:#c9c5c5 ;
+
+}
+
+footer{
+    background-color:#c9c5c5 ;
+
+}
+
+.banner img,
+.information img,
+video{
+    width: 60%;
+}
+
+.course img,
+.right img,
+.right2 img{
+    width: 35%;
+    height: auto;
+}

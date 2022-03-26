@@ -1,3 +1,10 @@
+body{
+    border: 0;
+    margin: 0;
+}
+
+/* NAV BAR */
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -15,7 +22,6 @@ nav img{
 
 .left ul{
     display: flex;
-    list-style-type: none;
     align-items: center;
     font-size: 32px;
     padding-left: 24px;
@@ -25,19 +31,115 @@ nav img{
 
 .right ul{
     display: flex;
-    list-style-type: none;
     gap:16px;
     padding-right: 24px;
 }
 
+/*BANNER*/
+
 .banner{
-background-color: #a39f9f;
+    background-color: #dfdddd;
+    display: flex;
+    padding: 32px 24px;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.banleft{
+    width: 60%;
+    padding: 0;
+}
+
+.banleft img{
+    width: 100%;
+}
+
+.banner ul{
+    width: 400px;
+    padding-right: 64px;
+}
+
+button {
+    background-color: #414040;
+    color: #ffffff;
+    height: 40px;
+    width: 95%;
+    border-color: #414040;
+    font-size: 18px;
+}
+
+/*INFORMATION*/
 
 .information{
-background-color:#c9c5c5 ;
+    background-color:#c9c5c5;
+    display: flex;
 }
+
+.inleft{
+    display: flex;
+    flex-direction:column;
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.inleft ul{
+    padding: 0;
+    margin: 0;
+}
+
+.inleft h4{
+    font-weight: normal;
+}
+
+.inleft img{
+    width: 100%;
+}
+
+.inright{
+    border: 1px dotted gray;
+    border-top: 0;
+    border-right: 0;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    padding-top: 13px;
+}
+
+.card{
+    display: flex;
+    border: 1px dotted gray;
+    border-right: 0;
+}
+
+.inright ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.inright h4,
+.inright h5,
+.inright h6{
+    margin: 8px;
+}
+
+.inright img{
+    width: 35%;
+    height: auto;
+    padding: 16px;
+}
+
+
+
+
+
+
+
 
 .course{
     background-color: #a39f9f;
@@ -53,15 +155,37 @@ footer{
 
 }
 
-.banner img,
-.information img,
-video{
-    width: 60%;
+
+ul{
+    list-style-type: none;
 }
 
-.course img,
-.right img,
-.right2 img{
-    width: 35%;
+
+h3{
+    font-size: 32px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+h5{
+    font-weight: 200;
+    font-size: 16px;
+}
+
+h6{
+    color: #1d9fca;
+    font-size: 14px;
+}
+
+video{
+    width: 60%;
     height: auto;
 }
+

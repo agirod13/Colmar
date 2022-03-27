@@ -1,5 +1,63 @@
+/* BODY */
+
 body{
     border: 0;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;  
+}
+
+.left{
+    display: flex;
+    flex-direction:column;
+    width: 60%;
+    padding-left: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 24px;
+}
+
+.right{
+    padding-right: 24px;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    padding-top: 32px;
+    margin: 0;
+    justify-content: center;
+}
+
+.top h1{
+    margin: 0;
+}
+
+.card{
+    display: flex;
+    border-right: 0;
+}
+
+.card img{
+    width: 35%;
+    height: auto;
+    padding: 16px;
+}
+
+.container ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 8px;
+}
+
+.container h2,
+.container h3{
     margin: 0;
 }
 
@@ -20,43 +78,24 @@ nav img{
     justify-content: center;
 }
 
-.left ul{
+nav .left ul{
     display: flex;
     align-items: center;
     font-size: 32px;
-    padding-left: 24px;
-    padding-left: 24px;
     text-align: center;
 }
 
-.right ul{
+nav .right ul{
     display: flex;
     gap:16px;
-    padding-right: 24px;
 }
 
-/*BANNER*/
-
+/* BANNER */
 .banner{
     background-color: #dfdddd;
     display: flex;
-    padding: 32px 24px;
     justify-content: space-between;
     align-items: center;
-}
-
-.banleft{
-    width: 60%;
-    padding: 0;
-}
-
-.banleft img{
-    width: 100%;
-}
-
-.banner ul{
-    width: 400px;
-    padding-right: 64px;
 }
 
 button {
@@ -68,124 +107,85 @@ button {
     font-size: 18px;
 }
 
-/*INFORMATION*/
-
-.information{
-    background-color:#c9c5c5;
+/* INFORMATION */
+.information,
+.thesis{
     display: flex;
 }
 
-.inleft{
-    display: flex;
-    flex-direction:column;
-    width: 60%;
-    padding: 32px 24px;
-}
-
-.inleft ul{
-    padding: 0;
+.information .left ul,
+.thesis .left ul{
     margin: 0;
+    padding: 0;
 }
 
-.inleft h4{
-    font-weight: normal;
-}
-
-.inleft img{
-    width: 100%;
-}
-
-.inright{
+.information .right{
     border: 1px dotted gray;
+}
+
+.information .right,
+.thesis .right{
+    width: 40%;
     border-top: 0;
     border-right: 0;
-    width: 40%;
     padding: 0;
     margin: 0;
 }
 
-.container{
-    padding-top: 13px;
-}
-
-.card{
-    display: flex;
+.information .card{
     border: 1px dotted gray;
-    border-right: 0;
 }
 
-.inright ul{
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+.read{
+    color: #3737e6;
 }
 
-.inright h4,
-.inright h5,
-.inright h6{
-    margin: 8px;
-}
-
-.inright img{
-    width: 35%;
-    height: auto;
-    padding: 16px;
-}
-
-
-
-
-
-
-
-
+/* COURSE */
 .course{
     background-color: #a39f9f;
+    padding: 32px 72px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
 }
 
-.thesis{
-    background-color:#c9c5c5 ;
-
+.description{
+    background-color: #ffffff;
+    padding: 16px 16px;
+    margin: 0;
+    gap: 8px
 }
 
+
+
+/* THESIS */
+.thesis .container{
+    padding-top: 32px;
+    padding-right: 4px;
+}
+
+/* FOOTER */
 footer{
-    background-color:#c9c5c5 ;
-
+    border: 1px dotted gray;
+    display: flex;
+    justify-content: space-between;
+    height: 96px;
 }
 
-
-ul{
-    list-style-type: none;
+footer .left{
+    padding: 0;
+    margin: 0;
 }
 
-
-h3{
-    font-size: 32px;
+footer h3{
+    margin: 0;
+    padding-top: 16px;
+    padding-left: 24px;
 }
 
-h1{
-    font-size: 50px;
+footer .right ul{
+    display: flex;
+    gap:16px;
 }
-
-h4{
-    font-weight: bold;
-    font-size: 24px;
-}
-
-h5{
-    font-weight: 200;
-    font-size: 16px;
-}
-
-h6{
-    color: #1d9fca;
-    font-size: 14px;
-}
-
-video{
-    width: 60%;
-    height: auto;
-}
-

@@ -199,3 +199,44 @@ footer .right ul{
     display: flex;
     gap:16px;
 }
+
+/*MOBILE*/
+.mobilenav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 64px;
+}
+
+.mobilenav img{
+    width: auto;
+    height: 48px;
+}
+
+.mobilebanner img{
+    width: 100%;
+    height: auto;
+}
+
+
+@media only screen and (max-width:600px){
+    nav,
+    .banner{
+        display: none;
+    }
+    .mobilenav,
+    .mobilebanner{
+        display: flex;
+    }
+
+
+}
+
+@media only screen and (min-width:601px) {    
+    .mobilenav,
+    .mobilebanner{
+        display: none;
+    }
+}
+    

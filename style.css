@@ -214,20 +214,49 @@ footer .right ul{
     height: 48px;
 }
 
+.mobilebanner{
+    width: 100%;
+    background-color: #dfdddd;
+}
+
 .mobilebanner img{
     width: 100%;
     height: auto;
 }
 
+.mobileinformation .container{
+    padding: 16px;
+}
+
+.mobileinformation .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobileinformation h3{
+    font-size: 14px;
+}
+
+.mobileinformation img{
+  width: 100%;
+}
+
 
 @media only screen and (max-width:600px){
     nav,
-    .banner{
+    .banner,
+    .information{
         display: none;
     }
     .mobilenav,
-    .mobilebanner{
+    .mobilebanner,
+    .mobileinformation{
         display: flex;
+    }
+    .mobilebanner{
+        flex-direction: column;
     }
 
 
@@ -235,7 +264,8 @@ footer .right ul{
 
 @media only screen and (min-width:601px) {    
     .mobilenav,
-    .mobilebanner{
+    .mobilebanner,
+    .mobileinformation{
         display: none;
     }
 }
